@@ -3,14 +3,14 @@ import "./scss/style.scss";
 const headphonesArticle = document.querySelector(".headphones");
 
 const mockData = [
-  { img: "img1.jpg", title: "Headphones Model A", price: "$99.99" },
-  { img: "img2.jpg", title: "Headphones Model B", price: "$149.99" },
-  { img: "img3.jpg", title: "Headphones Model C", price: "$199.99" },
-  { img: "img4.jpg", title: "Headphones Model D", price: "$249.99" },
-  { img: "img5.jpg", title: "Headphones Model E", price: "$299.99" },
-  { img: "img6.jpg", title: "Headphones Model F", price: "$349.99" },
-  { img: "img7.jpg", title: "Headphones Model G", price: "$399.99" },
-  { img: "img8.jpg", title: "Headphones Model H", price: "$449.99" },
+  { img: "https://th.bing.com/th/id/OIP.diQ0mZXVgP1hEVLVYBGekQHaKR?w=137&h=190&c=7&r=0&o=5&dpr=1.5&pid=1.7", title: "Pink Bose", price: "$99.99" },
+  { img: "https://th.bing.com/th/id/OIP.rAMTGHyyjcQYqHvxFXmeqQHaHa?w=199&h=200&c=7&r=0&o=5&dpr=1.5&pid=1.7", title: "Sony X34567", price: "$149.99" },
+  { img: "https://th.bing.com/th/id/OIP.bErH7h6-6X4ugwOKueWmUwHaHj?w=204&h=209&c=7&r=0&o=5&dpr=1.5&pid=1.7", title: "Elgiganten budget headphones", price: "$199.99" },
+  { img: "https://th.bing.com/th/id/OIP.uZK10usDLqvFZr4a867xewHaIq?w=154&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7", title: "Headphones Model 345", price: "$249.99" },
+  { img: "https://th.bing.com/th/id/OIP.eA2w3j7BAZ_AJQp5HfQn5gHaHa?w=190&h=190&c=7&r=0&o=5&dpr=1.5&pid=1.7", title: "HI-FI Headphones", price: "$299.99" },
+  { img: "https://th.bing.com/th/id/OIP.6WZHCb9rVStvjjH43x9kXQHaHa?w=197&h=197&c=7&r=0&o=5&dpr=1.5&pid=1.7", title: "Beats by Dre", price: "$349.99" },
+  { img: "https://th.bing.com/th/id/OIP.ZmblVvwVc_QKRUZrOioOJwHaHg?w=146&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7", title: "Airpods Max", price: "$399.99" },
+  { img: "https://th.bing.com/th/id/OIP.Pe1_3ldYRRwfkJOlDq7eDgHaLx?w=119&h=190&c=7&r=0&o=5&dpr=1.5&pid=1.7", title: "Samsung Headphones", price: "$449.99" },
 ];
 
 //Måste skapa en interface och byta ut any
