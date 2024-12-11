@@ -17,67 +17,10 @@ nav {
     justify-content: space-between;
     width: 100%;
 
-    .searchForm {
-      position: relative;
-      display: flex;
-
-      width: 25%;
-
-      .searchInput {
-        padding: 0.5rem;
-        width: 100%;
-
-        background-color: rgb(247, 247, 247);
-
-        border: none;
-        border-radius: 35px;
-        outline: none;
-
-        font-family: v.$font-family;
-        font-size: 0.8em;
-        font-style: italic;
-
-        color: v.$secondary-color;
-      }
-
-      .searchIcon {
-        position: absolute;
-        right: 0.8rem;
-        top: 50%;
-        transform: translateY(-50%);
-        color: v.$secondary-color;
-      }
-    }
-
-    .account {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      gap: 0.5em;
-
-      p {
-        font-family: v.$font-family;
-      }
-    }
-
-    .shoppingCart {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      gap: 0.5em;
-
-      color: v.$secondary-color;
-
-      p {
-        font-family: v.$font-family;
-      }
-    }
-
     .navList {
       display: flex;
-      flex-direction: row;
       justify-content: center;
-      gap: 2rem;
+      gap: 4rem;
 
       li {
         list-style: none;
@@ -88,6 +31,76 @@ nav {
           font-size: v.$primary-font-size;
 
           text-decoration: none;
+          color: v.$secondary-color;
+        }
+      }
+    }
+
+    .navTools {
+      display: flex;
+      align-items: center;
+      justify-content: right;
+      gap: 2rem;
+      width: 100%;
+      margin-right: 3%;
+
+      .searchForm {
+        position: relative;
+        display: flex;
+
+        width: 25%;
+
+        .searchInput {
+          padding: 0.5rem;
+          width: 100%;
+
+          background-color: rgb(247, 247, 247);
+
+          border: none;
+          border-radius: 35px;
+          outline: none;
+
+          font-family: v.$font-family;
+          font-size: 0.8em;
+          font-style: italic;
+
+          color: v.$secondary-color;
+        }
+
+        .searchIcon {
+          position: absolute;
+          right: 0.8rem;
+          top: 50%;
+          transform: translateY(-50%);
+          color: v.$secondary-color;
+        }
+      }
+
+      .account {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5em;
+
+        a {
+          text-decoration: none;
+          font-family: v.$font-family;
+
+          color: v.$secondary-color;
+        }
+      }
+
+      .shoppingCart {
+        display: flex;
+        align-items: center;
+        gap: 0.5em;
+
+        color: v.$secondary-color;
+
+        a {
+          text-decoration: none;
+          font-family: v.$font-family;
+
           color: v.$secondary-color;
         }
       }
