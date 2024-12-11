@@ -3,12 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Headphone Shop</title>
     <link rel="stylesheet" href="src/scss/_footer.scss">
   </head>
   <body>
+    <nav>
+      <section class="navbar">
+        <ul class="navList">
+          <li><a href="#">Categories</a></li>
+          <li><a href="#">Deals</a></li>
+          <li><a href="#">Delivery</a></li>
+        </ul>
+        <section class="navTools">
+          <form class="searchForm">
+            <input
+              type="text"
+              placeholder="Search Product"
+              class="searchInput"
+            />
+            <i class="fa-solid fa-magnifying-glass searchIcon"></i>
+          </form>
+          <section class="account">
+            <i class="fa-solid fa-user"></i>
+            <a href="#">Account</a>
+          </section>
+          <section class="shoppingCart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <a href="#">Cart</a>
+          </section>
+        </section>
+      </section>
+    </nav>
+    <div id="app"></div>
     <nav></nav>
     <div id="app">
       <article class="headphones"></article>
