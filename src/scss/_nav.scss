@@ -13,8 +13,52 @@ nav {
 
   .navbar {
     display: flex;
-    flex-direction: row;
-    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    .searchForm {
+      position: relative;
+      display: flex;
+
+      width: 25%;
+
+      .searchInput {
+        padding: 0.5rem;
+        width: 100%;
+
+        background-color: rgb(247, 247, 247);
+
+        border: none;
+        border-radius: 35px;
+        outline: none;
+
+        font-family: v.$font-family;
+        font-size: 0.8em;
+        font-style: italic;
+
+        color: v.$secondary-color;
+      }
+
+      .searchIcon {
+        position: absolute;
+        right: 0.8rem;
+        top: 50%;
+        transform: translateY(-50%);
+        color: v.$secondary-color;
+      }
+    }
+
+    .account {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 0.5em;
+
+      p {
+        font-family: v.$font-family;
+      }
+    }
 
     .shoppingCart {
       display: flex;
