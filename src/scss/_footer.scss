@@ -1,1 +1,17 @@
 @use "variables" as v;
+
+footer {
+    background-color: grey;
+
+    .info-column {
+        color: v.$primary-color;
+
+        li {
+            list-style: none;
+            a {
+                color: v.$primary-color;
+                text-decoration: none;
+            }
+        }
+    }
+}
