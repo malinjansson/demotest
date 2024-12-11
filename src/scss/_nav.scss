@@ -1,5 +1,30 @@
 @use "variables" as v;
 
-#app {
-  background-color: white;
+body {
+  background-color: antiquewhite;
+  margin: 0px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+
+  background-color: v.$primary-color;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+  li {
+    list-style: none;
+    a {
+      font-style: none;
+      font-family: v.$font-family;
+      font-size: v.$primary-font-size;
+
+      text-decoration: none;
+      color: v.$secondary-color;
+    }
+  }
 }
