@@ -2,6 +2,7 @@
 
 body {
   margin: 0px;
+  padding: 0px;
 }
 
 nav {
@@ -21,6 +22,7 @@ nav {
       display: flex;
       justify-content: center;
       gap: 4rem;
+      margin-left: 3%;
 
       li {
         list-style: none;
