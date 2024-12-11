@@ -10,21 +10,43 @@ nav {
   justify-content: center;
 
   background-color: v.$primary-color;
-}
-.navbar {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 2rem;
-  li {
-    list-style: none;
-    a {
-      font-style: none;
-      font-family: v.$font-family;
-      font-size: v.$primary-font-size;
 
-      text-decoration: none;
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+
+    .shoppingCart {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 0.5em;
+
       color: v.$secondary-color;
+
+      p {
+        font-family: v.$font-family;
+      }
+    }
+
+    .navList {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 2rem;
+
+      li {
+        list-style: none;
+
+        a {
+          font-style: none;
+          font-family: v.$font-family;
+          font-size: v.$primary-font-size;
+
+          text-decoration: none;
+          color: v.$secondary-color;
+        }
+      }
     }
   }
 }
