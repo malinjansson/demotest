@@ -1,0 +1,69 @@
+@use "variables" as v;
+
+.headphones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .headphones-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 22%;
+    margin: 1rem;
+    background-color: v.$primary-color;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+  .headphones-img {
+    width: 100%;
+    height: 40svh;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
+
+  .headphones-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+  .price-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 200px;
+
+    .headphones-price {
+      font-size: 1rem;
+      color: v.$secondary-color;
+      margin-right: auto;
+    }
+
+    .add-btn {
+      font-size: 1rem;
+      background-color: v.$secondary-color;
+      color: v.$primary-color;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-left: auto;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: v.$primary-color;
+        color: v.$secondary-color;
+        border: 1px solid v.$secondary-color;
+      }
+    }
+  }
+}

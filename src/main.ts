@@ -1,4 +1,5 @@
 import "./scss/style.scss";
+import "./scss/_products.scss";
 
 const headphonesArticle = document.querySelector(".headphones");
 
@@ -27,6 +28,9 @@ const createHeadphones = (data: any) => {
   headphonesTitle.classList.add("headphones-title");
   headphonesTitle.textContent = data.title;
 
+  const priceContainer = document.createElement("div");
+  priceContainer.classList.add("price-container");
+
   const headphonesPrice = document.createElement("p");
   headphonesPrice.classList.add("headphones-price");
   headphonesPrice.textContent = data.price;
@@ -35,10 +39,12 @@ const createHeadphones = (data: any) => {
   addToCartBtn.classList.add("add-btn");
   addToCartBtn.innerHTML = "Add To Cart";
 
+  priceContainer.appendChild(headphonesPrice);
+  priceContainer.appendChild(addToCartBtn);
+
   headphonesContainer.appendChild(headphonesImg);
   headphonesContainer.appendChild(headphonesTitle);
-  headphonesContainer.appendChild(headphonesPrice);
-  headphonesContainer.appendChild(addToCartBtn);
+  headphonesContainer.appendChild(priceContainer);
   headphonesArticle?.appendChild(headphonesContainer);
 };
 
