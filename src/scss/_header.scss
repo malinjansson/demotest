@@ -50,24 +50,16 @@ header {
         padding: 0;
     }
 
-    .campagin-container {
-        display: flex;
+    .top-campaign {
+        display: flex; 
         position: absolute;
-        top: 8em;
-        left: 5em;
-        height: 10em;
-        width: 10em;
-        font-family: v.$font-family;
+        top: 12em;
+        left: 3em; 
         font-weight: 800;
         font-size: 24px;
-        letter-spacing: 0.1em;
-        text-align: center;
-        color: v.$primary-color;
-        border: 1px solid v.$secondary-color;
-
-    .campaign-box {
-        padding: 10px;
-    }
+        color: v.$secondary-color;
+        background: v.$primary-color;
+        padding: 3em;
     }
 
     .shop-now-overlay {
