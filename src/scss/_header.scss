@@ -50,19 +50,6 @@ header {
         padding: 0;
     }
 
-    .top-campaign {
-        display: flex; 
-        position: absolute;
-        top: 12em;
-        left: 3em; 
-        font-weight: 800;
-        font-size: 24px;
-        color: v.$secondary-color;
-        background: v.$primary-color;
-        border: 3px solid v.$secondary-color;
-        padding: 3em;
-    }
-
     .shop-now-overlay {
         display: flex;
         position: absolute;
